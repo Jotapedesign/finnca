@@ -1,0 +1,112 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+
+#cabecera, #header-carro, #newsletter{
+    background-repeat: no-repeat;
+    background-size: cover;
+background-attachment: fixed;
+display: flex;
+align-items: center;
+
+}
+#cabecera{
+    min-height: 80vh;
+    background-image: url(../images/header1.jpg);
+    background-position: top center;
+}
+.brand{
+    padding: 10px;;
+}
+nav.navbar{
+    border-top: 1px solid $gray-500;
+}
+#header-carro{
+    min-height: 200px;
+    background-image: url(../images/header-carro.jpg);
+color: #fff;
+}
+#banners{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+    .banner1, .banner2{
+        border: none;
+    }
+.banner1{
+    background-color: lighten($primary, 40);
+    background: url(../images/banner1.png);
+    color: #fff;
+}
+.banner2{
+    background-color: lighten($celeste, 40);
+    color: $celeste;
+
+}
+
+    #catalogo{
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+
+
+
+#footer{
+    margin-top: 20px;
+    background-color: $primary;
+    padding-top: 20px;
+    color:#fff;
+    a{
+        color: lighten($primary, 20);
+    }
+}
+ul.usuario{
+    float: right;
+}
+ul.usuario li{
+    float: left;
+    position: relative;
+    max-width: 35px;
+    list-style: none;
+    margin: 10px;
+}
+
+.carro .badge{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.carousel-caption {
+    position: absolute;
+    top:40%;
+    text-align: left;;
+ }
+
+ /********** Productos ***********/
+ .card-title.producto{
+     color: $primary;
+ }
+ .precio{
+     color: $gray-500;
+     font-weight: 300;
+ }
+
+ .btn-add{
+     border-radius: 50%;
+     font-size: 30px;
+     width: 60px;
+     height: 60px;
+ }
+
+ .paginacion{
+     padding-top: 50px;
+ }
+
+ #newsletter{
+    background-image: url(../images/news-bg.jpg);
+     padding-top: 80px;
+     padding-bottom: 80px;
+     min-height: 80vh;
+ }
