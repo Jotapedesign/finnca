@@ -1,7 +1,10 @@
 @import "functions";
 @import "variables";
 @import "mixins";
-
+#contenido, .seccion{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 #cabecera, #header-carro, #newsletter{
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,6 +17,7 @@ align-items: center;
     min-height: 80vh;
     background-image: url(../images/header1.jpg);
     background-position: top center;
+
 }
 .brand{
     padding: 10px;;
@@ -25,6 +29,9 @@ nav.navbar{
     min-height: 200px;
     background-image: url(../images/header-carro.jpg);
 color: #fff;
+h1, h2, h3, h4, h5, h6{
+  color: #fff;
+}
 }
 #banners{
     padding-top: 15px;
@@ -37,10 +44,16 @@ color: #fff;
     background-color: lighten($primary, 40);
     background: url(../images/banner1.png);
     color: #fff;
+    h1, h2, h3, h4, h5, h6{
+      color: #fff;
+    }
 }
 .banner2{
     background-color: lighten($celeste, 40);
     color: $celeste;
+    h1, h2, h3, h4, h5, h6{
+      color: $celeste;
+    }
 
 }
 
@@ -50,10 +63,21 @@ padding-bottom: 50px;
 }
 
 
+/******* Conteido *********/
+.intro-text{
+  display: flex;
+  align-items: center;
+}
+/* quienes somos */
+.perfil{
+  border: none;
+}
+.nombre{
+  margin-top: 30px;
 
-
+}
+/*** fin contenido ***/
 #footer{
-    margin-top: 20px;
     background-color: $primary;
     padding-top: 20px;
     color:#fff;
@@ -61,6 +85,31 @@ padding-bottom: 50px;
         color: lighten($primary, 20);
     }
 }
+.menupie{
+  border-bottom: 1px solid #fff;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+footer .flex-column a{
+  padding: 0;
+  color: #fff;
+}
+footer  li.nav-item a.nav-link{
+  color: lighten($verde1 , 30)!important;
+}
+#post-pie{
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+#post-pie, #post-pie a{
+  font-size: 0.8rem;
+  color: #fff;
+}
+.img-pagos{
+  max-height: 50px;
+}
+
 ul.usuario{
     float: right;
 }
@@ -215,4 +264,14 @@ color: $gray-500;
      padding-top: 80px;
      padding-bottom: 80px;
      min-height: 80vh;
+ }
+
+ /***** Carro ******/
+ .direccion-form{
+   display: block;
+   border: solid 1px $gray-400;
+   padding: 10px;
+   border-radius: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
  }
