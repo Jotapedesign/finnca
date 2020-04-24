@@ -31,6 +31,11 @@
      <!-- icofont -->
      <link href="css/icofont.css" rel="stylesheet" >
 
+     <style type="text/css">
+      #registerform fieldset:not(:first-of-type) {
+      display: none;
+      }
+      </style>
   </head>
   <body>
 
@@ -76,7 +81,7 @@
               <a class="nav-link" href="#">Catálogo <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="somos.html">¿Quienes Somos?</a>
+              <a class="nav-link" href="#">¿Quienes Somos?</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">¿Que hacemos?</a>
@@ -100,77 +105,142 @@
           <!-- Fin Menú Cabecera -->
   </header>
     <!-- Fin  Cabecera -->
-    <!-- Cabecera -->
-    <section id="cabecera">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 wow fadeInLeft">
-            <h1>Lo mejor del campo</br> directo a tu mesa</h1>
-              <button class="btn btn-lg btn-primary my-2 my-sm-0" type="submit">Conócenos</button>
-            </div>
-            <div class="col-md-6">
-              <img src="images/plato1.png" class="wow fadeInRight" data-wow-delay="0.5s" alt="plato">
+
+<!-- cabecera-secciones -->
+<div class="jumbotron jumbotron-fluid" id="cabecera-resumen">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="transparencia">
+
+    <h2 class="display-5">¡Tu compra se ha realizado con éxito!</h2>
+    <p class="lead">Mientras preparamos tu pedido, recibiras la orden de compra en tu correo de contacto</p>
+    <p>Ante cualquier duda, comunicate con nuestra mesa de soporte</p>
+  </div>
 </div>
+</div>
+
+  </div>
+</div>
+<!-- cabecera-secciones --> 
+<!-- Contenido -->
+<section id="contenido">
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h1>Resumen de tu pedido</h1>
+    </div>
+    </div>
+    <article>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          
+          <ul class="resumen-pedido">
+            <li><i class="icofont-check-alt"></i><strong>Nº: </strong> 0001</li>
+            <li><i class="icofont-check-alt"></i><Strong>Solicitado por: </Strong>Juan Pablo Peña Contreras</li>
+            <li><i class="icofont-check-alt"></i><strong>Fecha de ingreso: </strong>Martes 21 de Abril de 2020</li>
+            <li><i class="icofont-check-alt"></i><strong>Valor total: </Strong>$8.568</li>
+            <li><i class="icofont-check-alt"></i><strong>Estado: </strong>En progreso <img src="images/iconos/camion-animado1.gif" alt="pedido en progreso"></li>
+            <li><i class="icofont-check-alt"></i><strong>Medio de Pago </strong>Payu</li>
+            <li><i class="icofont-check-alt"></i><strong>Comprobante tributario: </strong>Boleta</li>
+            <li><i class="icofont-check-alt"></i><strong>Dirección de despacho: </strong> Pasaje San Isidro 4260. La Serena</li>
+            <li><i class="icofont-check-alt"></i><strong>Fecha estimada de entrega: </strong> Viernes 24 de Abril</li>
+          </ul>
         </div>
       </div>
-  
-</section>
-    <!-- Fin Cabecera -->
+    <div class="row intro-text">
+    <div class="col-md-8 offset-md-2">
+      <h3>Detalle de tu compra</h3>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Vista previa</th>
+            <th scope="col">Producto</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">$ Precio (CLP)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><img src="images/miniaturas/manzana-thumb.png" alt="manzana" class="img-fluid"></th>
+            <td><h6>Tomate de arica</h6><p>20kg</p></td>
+            <td>
+                <div class="form-group col-8 offset-2">
+<span>1</span>  
+              </div>
+            </td>
+            <td><h6>$2.400</h6></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="images/miniaturas/manzana-thumb.png" alt="manzana" class="img-fluid"></th>
+            <td><h6>Tomate de arica</h6><p>20kg</p></td>
+            <td>
+                <div class="form-group col-8 offset-2">
+                  <span>1</span>  
+                </div>
+            </td>
+            <td><h6>$2.400</h6></td>
+          </tr>
+          <tr>
+            <th scope="row"><img src="images/miniaturas/manzana-thumb.png" alt="manzana" class="img-fluid"></th>
+            <td><h6>Tomate de arica</h6><p>20kg</p></td>
+            <td>
+                <div class="form-group col-8 offset-2">
+                  <span>1</span>  
+                </div>
+            </td>
+            <td><h6>$2.400</h6></td>
+          </tr>
+          <tr class="table-secondary ">
+            <th colspan="3" scope="row">Neto:</th>
+            <td>$7.200</td>
+          </tr>
+          <tr class="table-secondary">
+            <th colspan="3" scope="row">Descuento:</th>
+            <td>0</td>
+          </tr>
+          <tr class="table-secondary">
+            <th colspan="3"  scope="row">IVA:</th>
+            <td>$1.368</td>
+          </tr>
+          <tr class="table-primary">
 
-
-  
-<!-- Productos -->
-<section id="catalogo">
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h2>Compra Finalizada</h2>
-    <hr/>
-    <h5>Filtro</h5>
-    </div>
+            <th  colspan="3" scope="row">Total:</th>
+            <td>$8.568</td>
+          </tr>
+        </tbody>
+      </table>
+        </div>
   </div>
-</div>
+ </article>
 
 
-</div>
+
+
+
+ 
+</main>
 </section>
-<!-- Fin Productos -->
+<!-- Fin Contenido -->
 
-<!-- Newsletter -->
-<section id="newsletter">
+<!-- Que hacemos -->
+<section id="servicio">
   <div class="container">
     <div class="row justify-content-md-center">
-      <div class="col-md-4">
-<div class="card">
-  <div class="card-body">
-    <div class="card-text text-center">
-    <h5>Suscríbete a nuestro newsletter</h5>
-    <p>Y recibe importantes ofertas y descuentos</p>
-  </div>
-  <form>
-    <div class="form-group">
-      <label for="nombrenews">Nombre</label>
-      <input type="email" class="form-control" id="nombrenews" placeholder="Ingresa tu correo">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">Nos aseguraremos de guardar muy bien tu información</small>
-    </div>
-    <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Acepto la Política de privacidad</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Suscribirme</button>
-  </form>
-</div>
-</div>
+      <div class="col-md-6 offset-md-6">
+        <div class="transparencia">
+        <h2>¿Aún no sabes cómo gestionamos tu pedido?</h2>
+        <h5>Te inviamos a saber un poco mas de La Finnca</h5>
+       <p> <a href="que-hacemos.html" class="btn btn-lg btn-primary">Aquí</a></p>
+      </div>
       </div>
     </div>
   </div>
 </section>
-<!-- Fin Newsletter -->
+<!-- Fin que hacemos -->
 
+
+<!-- footer -->
 <footer id="footer" class="blog-footer">
   <div class="container">
     <div class="row menupie">
@@ -228,6 +298,8 @@
 <script src="js/bootstrap.min.js" ></script>
 <script src="js/bootstrap.bundle.js" ></script>
 <script src="js/wow.min.js" ></script>
+<script src="js/pasos.js" ></script>
+<script src="js/modals-registro.js" ></script>
 
 <script>
   new WOW().init();
