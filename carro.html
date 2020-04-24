@@ -31,6 +31,11 @@
      <!-- icofont -->
      <link href="css/icofont.css" rel="stylesheet" >
 
+     <style type="text/css">
+      #registerform fieldset:not(:first-of-type) {
+      display: none;
+      }
+      </style>
   </head>
   <body>
 
@@ -191,8 +196,8 @@
         </tbody>
       </table>
       <div class="form-group text-right">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login-modal">Continuar (no logueado)</button>
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sucursal-modal">Continuar (logueado)</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formulariomodal1">Continuar (no logueado)</button>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formulariomodal3">Continuar (logueado)</button>
       </div>
     </form>
         </div>
@@ -200,7 +205,7 @@
  </article>
 
  <!-- modal login-->
- <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true"> 
+ <div class="modal fade" id="formulariomodal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
    <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
@@ -210,8 +215,10 @@
         </button>
       </div>
       <div class="modal-body col-8 offset-2">
+        
         <h6 class=" text-center">Ingresa con tu usuario y contraseña para completar la compra</h6>
-        <form id="loginform">
+
+        <form id="loginform"  novalidate action="form_action.php" method="post">
           <div class="form-group">
             <label for="login-name">Nombre de usuario / Email</label>
             <input type="email" class="form-control" id="login-name" aria-describedby="loginnamelHelp">
@@ -228,58 +235,242 @@
           <button type="submit" class="btn btn-block btn-primary">Ingresar</button>
           <br/>
           <h5 class="text-center">¿Primera vez por aqui?</h5>
-          <button type="submit" class="btn btn-block btn-secondary">Registrate</button>
-        </form>
+          <button type="button" class="btn btn-block btn-secondary btn-next" >Registrate</button>
+</form>
+
+
+          </div>
             </div>
     </div>
+
+    
   </div>
 </div>
  <!-- Fin modal login-->
 
-  <!-- modal logeado-->
-  <div class="modal fade" id="sucursal-modal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true"> 
-    <div class="modal-dialog" role="document">
-     <div class="modal-content">
-       <div class="modal-header text-center">
-         <h3 class="modal-title ">Despacho</h3>
-         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-           <span aria-hidden="true">&times;</span>
-         </button>
-       </div>
-       <div class="modal-body col-8 offset-2">
-        <h6 class=" text-center">Selecciona tu dirección de despacho</h6>
-        <form id="loginform">
-           <div class="direccion-form">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-             <h6>Sucursal 1 / Dirección 1</h6>
-            </label>
-            <p>Av. Juan Cisternas 2283 Of. 03
-              La Serena
-              Región de Coquimbo
-              Chile</p>
+ <!-- modal Registro-->
+ <div class="modal fade" id="formulariomodal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="">Registro de Usario</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body ">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-        </div>
-        <div class="direccion-form">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-             <h6>Sucursal 2 / Dirección 2</h6>
-            </label>
-            <p>Av. Juan Cisternas 2283 Of. 03
-              La Serena
-              Región de Coquimbo
-              Chile</p>
-          </div>
-        </div>
 
-                 </form>
-             </div>
-     </div>
-   </div>
- </div>
-  <!-- Fin modal logeado-->
+        <form id="registerform"  novalidate action="form_action.php" method="post">
+          <fieldset>
+              <h2> Registro</h2>
+              <h4>Información Personal</h4>
+              <div class="form-group">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" class="form-control" name="nombree" id="nombre" placeholder="">
+              </div>
+              <div class="form-group">
+              <label for="usuario">Nombre de Usuario</label>
+              <small class="form-text text-muted" >lo utilizarás para ingresar al sitio</small>
+              <input type="text" class="form-control" name="usuario" id="usuario" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Te contactaremos a este correo en caso de necesitar algo</small>
+              </div>
+              <div class="form-group">
+                <label for="emailconfirm">Confirma tu Email</label>
+                <input type="email" class="form-control" id="emailconfirm" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">Sólamente queremos asegurarnos de que recibas correctamente tus comprobantes y despachos.</small>
+              </div>
+              <div class="form-group">
+                <label for="password1">Contraseña</label>
+                <input type="password" class="form-control" id="password1">
+              </div>
+              <div class="form-group">
+                <label for="password2">Confirma tu contraseña</label>
+                <input type="password" class="form-control" id="password2">
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono de Contacto</label>
+                <input type="email" class="form-control" id="telefono" >
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <label for="pais">País</label>
+                  <select id="pais" class="form-control">
+                    <option selected>Selecciona...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col">
+                  <label for="region">Región / Estado / Provincia</label>
+                  <select id="region" class="form-control">
+                    <option selected>Selecciona...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                  <div class="form-group col">
+                        <label for="ciudad">Ciudad</label>
+                      <select id="ciudad" class="form-control">
+                            <option selected>Selecciona...</option>
+                                    <option>...</option>
+    </select>
+  </div>
+
+</div>
+
+    
+              <input type="button" name="Anterior" class="btn-secondary previous-form btn btn-default" value="Anterior" />
+              <input type="button" name="Siguiente" class="btn-primary next-form btn " value="Siguiente" />
+              </fieldset>
+    
+              <fieldset>
+    
+              <h2> Registro</h2>
+              <h4>Información de Despacho</h4>
+              <div class="form-group">
+                <label for="nombreUbicacion">Nombre de la dirección</label>
+                <small id="emailHelp" class="form-text text-muted">Para que puedas identificarla si es que agregas más de una</small>
+                <input type="text" class="form-control" name="nombreUbicacion" id="nombreUbicacion" placeholder="First Name">
+                </div>
+  
+              <div class="form-group">
+              <label for="direccion">Dirección de despacho</label>
+              <input type="text" class="form-control" name="direccion" id="direccion" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono de Contacto</label>
+                <input type="email" class="form-control" id="telefono" >
+                <small id="emailHelp" class="form-text text-muted">Déjalo en blanco si prefieres utilizar el teléfono de tu perfil</small>
+              </div>
+              <div class="form-row">
+                <div class="form-group col">
+                  <label for="pais">País</label>
+                  <select id="pais" class="form-control">
+                    <option selected>Selecciona...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col">
+                  <label for="region">Región / Estado / Provincia</label>
+                  <select id="region" class="form-control">
+                    <option selected>Selecciona...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <input type="button" name="Anterior" class="btn-secondary previous-form btn btn-default" value="Anterior" />
+              <button type="button" class="btn btn-primary btn-next" >Finalizar</button>
+            </fieldset>
+
+    
+            
+
+          </form>     </div>
+    </div>
+  </div>
+</div>
+<!-- Fin modal Registro-->
+
+     <!-- modal logeado-->
+     <div class="modal fade" id="formulariomodal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="">Registro de Usario</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body ">
+    
+            <form id="registerform"  novalidate action="form_action.php" method="post">
+              <fieldset>
+
+                <div class="direccion-form">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                     <h6>Sucursal 1 / Dirección 1</h6>
+                    </label>
+                    <p>Av. Juan Cisternas 2283 Of. 03
+                      La Serena
+                      Región de Coquimbo
+                      Chile</p>
+                  </div>
+                </div>
+                <div class="direccion-form">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                     <h6>Sucursal 2 / Dirección 2</h6>
+                    </label>
+                    <p>Av. Juan Cisternas 2283 Of. 03
+                      La Serena
+                      Región de Coquimbo
+                      Chile</p>
+                  </div>
+                </div>
+        
+        
+                  <input type="button" name="Anterior" class="btn-secondary previous-form btn btn-default" value="Anterior" />
+                  <input type="button" name="Siguiente" class="btn-primary next-form btn " value="Siguiente" />
+                  </fieldset>
+
+                  <fieldset>
+                    <div class="form-row pagos-ico">
+                      <div class="col">
+
+                    <div class="form-check custom-control custom-radio image-radio">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="ck1a" value="option2" >
+                      <label class="custom-control-label" for="ck1a">
+                              <img src="images/pago/webpay.png" alt="#" class="img-fluid">
+                        
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col">
+
+                    <div class="form-check custom-control custom-radio image-radio">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="ck1b" value="option2" >
+                      <label class="custom-control-label" for="ck1b">
+                              <img src="images/pago/match.png" alt="#" class="img-fluid">
+                        
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col">
+
+                    <div class="form-check custom-control custom-radio image-radio">
+                      <input class="form-check-input" type="radio" name="exampleRadios" id="ck1c" value="option3" >
+                      <label class="custom-control-label" for="ck1c">
+                              <img src="images/pago/payu.png" alt="#" class="img-fluid">
+                        
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+
+                    <input type="button" name="Anterior" class="btn-secondary previous-form btn btn-default" value="Anterior" />
+                    <input type="button" name="Siguiente" class="btn-primary next-form btn " value="Siguiente" />  
+                  </fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>    
+     <!-- Fin modal logeado-->
+
+
  
 </main>
 </section>
@@ -342,6 +533,8 @@
 <script src="js/bootstrap.min.js" ></script>
 <script src="js/bootstrap.bundle.js" ></script>
 <script src="js/wow.min.js" ></script>
+<script src="js/pasos.js" ></script>
+<script src="js/modals-registro.js" ></script>
 
 <script>
   new WOW().init();
