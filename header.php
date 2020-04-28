@@ -74,7 +74,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Catálogo <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php">Catálogo <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="somos.php">¿Quienes Somos?</a>
