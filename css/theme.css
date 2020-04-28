@@ -1,9 +1,130 @@
-#contenido, .seccion {
-  padding-top: 100px;
-  padding-bottom: 100px;
+/****** Menus *******/
+.navbar-admin1 {
+  color: #adb5bd;
+}
+.navbar-admin1 a {
+  color: #adb5bd;
 }
 
-#cabecera, #header-carro, #newsletter, #servicio {
+.bg-admin1 {
+  background-color: #343a40;
+}
+
+.navbar-admin2 {
+  color: #adb5bd;
+}
+.navbar-admin2 a {
+  color: #adb5bd;
+}
+
+.bg-admin2 {
+  background-color: #495057;
+}
+
+.navbar-admin3 {
+  color: #ddecf2;
+}
+.navbar-admin3 a {
+  color: #ddecf2;
+}
+
+.bg-admin3 {
+  background-color: #4999BA;
+}
+
+.navbar-admin4 {
+  color: #4999BA;
+}
+.navbar-admin4 a {
+  color: #4999BA;
+}
+
+.bg-admin4 {
+  background-color: #93c2d6;
+}
+
+.navbar-admin5 {
+  color: #fdf2e7;
+}
+.navbar-admin5 a {
+  color: #fdf2e7;
+}
+
+.bg-admin5 {
+  background-color: #EB8B2D;
+}
+
+.navbar-admin6 {
+  color: #daefd4;
+}
+.navbar-admin6 a {
+  color: #daefd4;
+}
+
+.bg-admin6 {
+  background-color: #5EB245;
+}
+
+.user {
+  color: #4999BA;
+}
+
+a.perfil-link {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  line-height: normal;
+}
+
+span.tipo {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
+}
+
+.tipo.admin1 {
+  position: absolute;
+  color: #5EB245;
+  padding: 5px;
+  margin: 0;
+  top: 25px;
+  right: 0;
+}
+
+.tipo.admin2 {
+  background-color: #EB8B2D;
+  color: #fff;
+  padding: 5px;
+}
+
+.tipo.admin3 {
+  background-color: #EB8B2D;
+  color: #fff;
+  padding: 5px;
+}
+
+.tipo.admin4 {
+  background-color: #EB8B2D;
+  color: #fff;
+  padding: 5px;
+}
+
+.tipo.admin5 {
+  background-color: #EB8B2D;
+  color: #fff;
+  padding: 5px;
+}
+
+/**** Fin menus ****/
+#contenido,
+.seccion {
+  padding-top: 100px;
+}
+
+#cabecera,
+#header-carro,
+#header-hacemos,
+#newsletter,
+#servicio {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -21,16 +142,36 @@
   padding: 10px;
 }
 
-nav.navbar {
+nav.navbar.menu-principal {
   border-top: 1px solid #adb5bd;
 }
 
 #header-carro {
-  min-height: 200px;
   background-image: url(../images/header-carro.jpg);
+}
+
+#header-hacemos {
+  background-image: url(../images/header-hacemos.jpg);
+  background-position: top center;
+}
+
+#header-carro,
+#header-hacemos {
+  min-height: 200px;
   color: #fff;
 }
-#header-carro h1, #header-carro h2, #header-carro h3, #header-carro h4, #header-carro h5, #header-carro h6 {
+#header-carro h1,
+#header-carro h2,
+#header-carro h3,
+#header-carro h4,
+#header-carro h5,
+#header-carro h6,
+#header-hacemos h1,
+#header-hacemos h2,
+#header-hacemos h3,
+#header-hacemos h4,
+#header-hacemos h5,
+#header-hacemos h6 {
   color: #fff;
 }
 
@@ -39,7 +180,8 @@ nav.navbar {
   padding-bottom: 15px;
 }
 
-.banner1, .banner2 {
+.banner1,
+.banner2 {
   border: none;
 }
 
@@ -48,7 +190,12 @@ nav.navbar {
   background: url(../images/banner1.png);
   color: #fff;
 }
-.banner1 h1, .banner1 h2, .banner1 h3, .banner1 h4, .banner1 h5, .banner1 h6 {
+.banner1 h1,
+.banner1 h2,
+.banner1 h3,
+.banner1 h4,
+.banner1 h5,
+.banner1 h6 {
   color: #fff;
 }
 
@@ -56,13 +203,31 @@ nav.navbar {
   background-color: #ddecf2;
   color: #4999BA;
 }
-.banner2 h1, .banner2 h2, .banner2 h3, .banner2 h4, .banner2 h5, .banner2 h6 {
+.banner2 h1,
+.banner2 h2,
+.banner2 h3,
+.banner2 h4,
+.banner2 h5,
+.banner2 h6 {
   color: #4999BA;
 }
 
-#catalogo {
+main {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.primary {
+  color: #5EB245;
+}
+
+.page-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.subtitulo {
+  color: #EB8B2D;
 }
 
 /******* Conteido *********/
@@ -87,7 +252,12 @@ nav.navbar {
   border-radius: 10px;
   color: #fff;
 }
-.transparencia h1, .transparencia h2, .transparencia h3, .transparencia h4, .transparencia h5, .transparencia h6 {
+.transparencia h1,
+.transparencia h2,
+.transparencia h3,
+.transparencia h4,
+.transparencia h5,
+.transparencia h6 {
   color: #fff;
 }
 
@@ -121,7 +291,8 @@ footer li.nav-item a.nav-link {
   padding-bottom: 15px;
 }
 
-#post-pie, #post-pie a {
+#post-pie,
+#post-pie a {
   font-size: 0.8rem;
   color: #fff;
 }
@@ -136,10 +307,15 @@ ul.usuario {
 
 ul.usuario li {
   float: left;
-  position: relative;
-  max-width: 35px;
   list-style: none;
   margin: 10px;
+  display: block;
+}
+
+a.carro {
+  height: 30px;
+  display: block;
+  position: relative;
 }
 
 .carro .badge {
@@ -160,11 +336,24 @@ ul.usuario li {
 }
 
 .precio {
-  color: #adb5bd;
+  color: #6c757d;
   font-weight: 300;
 }
 
+.peso {
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
 /* etiqueta nuevo */
+.unitario {
+  font-style: italic;
+  color: #adb5bd;
+}
+
 .ribbon {
   width: 120px;
   height: 120px;
@@ -304,7 +493,8 @@ ul.usuario li {
   background-image: url(../images/gestion-bg.jpg);
 }
 
-#newsletter, #servicio {
+#newsletter,
+#servicio {
   padding-top: 80px;
   padding-bottom: 80px;
   min-height: 80vh;
@@ -336,13 +526,18 @@ ul.resumen-pedido i {
   margin-right: 5px;
 }
 
-ul.resumen-pedido li {
+ul.resumen-pedido li,
+ul.lista-limpia li {
   color: #6c757d;
   list-style: none;
   list-style-position: outside;
   line-height: 1.8rem;
   border-bottom: 1px solid #dee2e6;
   padding: 10px;
+}
+
+ul.lista-limpia li:last-of-type {
+  border: none;
 }
 
 ul.resumen-pedido li:last-of-type {
