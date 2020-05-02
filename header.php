@@ -1,19 +1,20 @@
 <header>
     <div class="container ">
-        <div class="row align-items-center">
-            <div class="col-md-5 ">
+        <div class="row align-items-center ">
+
+            <div class="col-lg-4 col-12 ">
                 <div class="form-group">
-                    <form class="form-inline mt-2 mt-md-0">
-                        <div class="form-row">
-                            <div class="col-md-6">
+                <form class="form-inline mt-2 mt-md-0 justify-content-center">
+                        <div class="form-row ">
+                            <div class="col">
                                 <label>País</label>
-                                <select class="form-control" id="País">
+                                <select class="form-control " id="País">
                                     <option>Chile</option>
                                     <option>Argentina</option>
                                     <option>Perú</option>
                                 </select>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col">
                                 <label>Ciudad</label>
                                 <select class="form-control" id="País">
                                     <option>Santiago</option>
@@ -25,34 +26,32 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-2 text-center brand">
-                <img src="images/logo-v.png" alt="Logo Finnca">
+            <div class="col-lg-4 col-12 text-center brand">
+                <img src="images/logo-v.png" alt="Logo Finnca" class="img-fluid">
             </div>
-            <div class="col-md-5 text-right">
+            <div class="col-md-4 col-12">
                 
-                <nav class="navbar nav text-right navbar-expand-md">
-                    
+                <nav class="navbar nav navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
                 <ul class="navbar-nav ml-md-auto usuario">
                         <li class="nav-item dropdown">
                             <a class="perfil-link nav-link dropdown-toggle" data-toggle="dropdown" href="#"
                                 role="button" aria-haspopup="true" aria-expanded="false">
                                 <i class="icofont-user user"></i>
-                                Bienvenido Usuario</a><span class="tipo admin1">super-admin</span>
+                                Mi Cuenta<span class="tipo admin1">super-admin</span></a>
                             <div class="dropdown-menu">
                             <a class="dropdown-item" href="perfil.php">Mi perfil</a>
                             <a class="dropdown-item">Ajustes</a>
                             <a class="dropdown-item">Salir</a>
-                            <div class="dropdown-divider"></div>
-                                 <a class="dropdown-item">Localizaciones</a>
-                                <a class="dropdown-item">Categorías</a>
-                                <a class="dropdown-item">Productos</a>
-                                <a class="dropdown-item">Usuarios</a>
-                                <a class="dropdown-item">Empresas</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="carro " href="carro.php">
-                                <img src="images/iconos/camion0.png" class="img-fluid" alt="carro">
+                            <a class="carro nav-link " href="carro.php">
+                                <i class="navbar-tool-icon"><img src="images/iconos/camion0.png" class="" alt="carro"></i>
                                 <span class="badge badge-danger">9</span>
                             </a>
                         </li>
@@ -67,10 +66,6 @@
         <div class="row-fluid ">
 
     <nav class="navbar navbar-expand-md   navbar-light menu-principal">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -89,12 +84,9 @@
                     <a class="nav-link" href="#">Contacto</a>
                 </li>
             </ul>
-            <form class="form-inline mt-2 mt-md-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Encuentra lo que necesites"
-                    aria-label="Search">
-                <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="icofont-search-1"></i></button>
-            </form>
-        </div>
+            <div class=" d-lg-block">
+                <a href="login.php" class="btn btn-sm btn-secondary btn-pricing-plan mr-1">Registrate</a>
+                <a href="registro.php" target="_blank" class="btn btn-sm btn-outline-white btn-docs"><i class="fas fa-book mr-2"></i> Ingresa</a></div>        </div>
     </nav>
     </div>
     </div>

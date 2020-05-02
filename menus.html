@@ -38,171 +38,132 @@
 
     <!-- Cabecera -->
     <header>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-5 ">
+        <div class="container ">
+            <div class="row align-items-center ">
+
+                <div class="col-lg-4 col-12 ">
+                    <div class="form-group">
+                        <form class="form-inline mt-2 mt-md-0 justify-content-center">
+                            <div class="form-row ">
+                                <div class="col">
+                                    <label>País</label>
+                                    <select class="form-control " id="País">
+                                        <option>Chile</option>
+                                        <option>Argentina</option>
+                                        <option>Perú</option>
+                                    </select>
+                                </div>
+                                <div class="col">
+                                    <label>Ciudad</label>
+                                    <select class="form-control" id="País">
+                                        <option>Santiago</option>
+                                        <option>La Serena</option>
+                                        <option>Coquimbo</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-md-2 text-center brand">
-                    <img src="images/logo-v.png" alt="Logo Finnca">
+                <div class="col-lg-4 col-12 text-center brand">
+                    <img src="images/logo-v.png" alt="Logo Finnca" class="img-fluid">
                 </div>
-                <div class="col-md-5 text-right">
-                    <ul class="usuario">
-                        <li>
-                            <a href="#"><img src="images/iconos/perfil.png" class="img-fluid" alt="carro"></a>
-                        </li>
-                        <li class="carro">
-                            <a href="carro.html">
-                                <img src="images/iconos/camion0.png" class="img-fluid" alt="carro"> <span class="badge badge-danger">9</span>
-                                <span class="sr-only">unread messages</span></a>
-                        </li>
-                    </ul>
+                <div class="col-md-4 col-12">
+
+                    <nav class="navbar nav navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+                        <ul class="navbar-nav ml-md-auto usuario">
+                            <li class="nav-item dropdown">
+                                <a class="perfil-link nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icofont-user user"></i> Mi Cuenta<span class="tipo admin1">super-admin</span></a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="perfil.php">Mi perfil</a>
+                                    <a class="dropdown-item">Ajustes</a>
+                                    <a class="dropdown-item">Salir</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="carro nav-link " href="carro.php">
+                                    <i class="navbar-tool-icon"><img src="images/iconos/camion0.png" class="" alt="carro"></i>
+                                    <span class="badge badge-danger">9</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
             </div>
         </div>
         <!-- Menú Cabecera -->
+        <div class="container-fluid ">
+            <div class="row-fluid ">
 
-        <nav class="navbar  navbar-expand-md   navbar-light ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Catálogo <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="somos.html">¿Quienes Somos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">¿Que hacemos?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Partners</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Convenios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-                <form class="form-inline mt-2 mt-md-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Encuentra lo que necesites" aria-label="Search">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="icofont-search-1"></i></button>
-                </form>
+                <nav class="navbar navbar-expand-md   navbar-light menu-principal">
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.php">Catálogo <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="somos.php">¿Quienes Somos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="hacemos.php">¿Que hacemos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Partners</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                        </ul>
+                        <div class=" d-lg-block">
+                            <a href="login.php" class="btn btn-sm btn-secondary btn-pricing-plan mr-1">Registrate</a>
+                            <a href="registro.php" target="_blank" class="btn btn-sm btn-outline-white btn-docs"><i class="fas fa-book mr-2"></i> Ingresa</a></div>
+                    </div>
+                </nav>
             </div>
-        </nav>
+        </div>
+
         <!-- Fin Menú Cabecera -->
     </header>
     <!-- Fin  Cabecera -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Menus</h1>
+                <p>Y en el dropdown del usuario, habría que agregar esto dentro del texto del usuairo, justo despues de "{{ identity.name + ' ' + identity.surname }}"</p>
+                {{ identity.name + ' ' + identity.surname }}<span class="text-success">&lt;span class="tipo admin1" &gt Ingresaste como: Administrador&lt;/span &gt</span>
+                <p>
+                    Hay que eliminar la clase <span class="text-danger">text-light</span> de los items del menu y del item dropdown del menu desplegable.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
 
-    <!---------------------------------------------- MENU PRINCIPAL   ---------------------------------------->
-    <br>
-    <h1>MENU PRINCIPAL</h1><br>
-    <nav class="navbar  navbar-expand-md   navbar-light " *ngIf="identity.role == 0 && company.company == ''">
+                <p>Para los colores de cada menú, sólamente habría que cambiar la clase en la primera línea de los menus</p>
 
-        <a class="navbar-brand" href="#">FINNCA INICIO</a>
+                <p>&lt;nav class="navbar navbar-expand-lg <span class="text-danger"> navbar-dark bg-dark</span>" &gt; por los que aparecen mas abajo.</p>
+                <h3>Perfíl administrador</h3>
+                <p>&lt;nav class="navbar navbar-expand-lg <span class="text-success"> navbar-dark bg-dark</span>" &gt; </p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------ PERFIL ADMINISTRADOR   ---------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light-dark" *ngIf="identity.role == 2">
+        <a class="navbar-brand" href="#">FINNCA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" [routerLink]="['/']">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/camion']">Carro</a>
-                </li>
-            </ul>
-
-            <ul class="navbar-nav">
-                <li>
-                    <a class="btn btn-primary text-light mr-3" (click)="changeLocation()">Cambiar Localidad</a>
-                </li>
-            </ul>
-
-
-            <ul class="navbar-nav navbar-right" *ngIf="token == 0 || token == null">
-
-
-
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/login-usuario']">Ingresar</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/registro-empresa']">Registrarse</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-------------------------------------- PERFIL SUPER ADMINISTRADOR   ---------------------------------------->
-    <br>
-    <h1>PERFIL SUPER ADMINISTRADOR</h1><br>
-    <nav class="navbar navbar-expand-lg navbar-admin1 bg-admin1" *ngIf="identity.role == 1">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" [routerLink]="['/sp-home']">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Localizaciones</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" [routerLink]="['/paises']">Paises</a>
-                        <a class="dropdown-item" [routerLink]="['/ciudades']">Ciudades</a>
-                        <a class="dropdown-item" [routerLink]="['/comunas']">Comunas</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/crear-categoria']">Categorias</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/productos']">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/usuarios']">Usuarios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/empresas']">Empresas</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" [routerLink]="['/suscripciones']">Suscripciones</a>
-                </li>
-            </ul>
-
-
-            <ul class="navbar-nav navbar-right" *ngIf="!token == 0 || !token == null">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Bienvenido Usuario<br><span class="tipo admin1">Ingresaste como: Administrador</span>
-                  </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Mi perfil</a>
-                        <a class="dropdown-item" [routerLink]="['/ajustes']">Ajustes</a>
-                        <a class="dropdown-item" [routerLink]="['/logout/1']">Salir</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
-    <!------------------------------------------ PERFIL ADMINISTRADOR   ---------------------------------------->
-    <br><br>
-    <h1>PERFIL ADMINISTRADOR </h1><br>
-    <nav class="navbar navbar-expand-lg navbar-admin2 bg-admin2" *ngIf="identity.role == 2">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -226,8 +187,8 @@
             <ul class="navbar-nav navbar-right" *ngIf="!token == 0 || !token == null">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Bienvenido Usuario<br><span class="tipo admin2">Ingresaste como: Administrador</span>
-        </a>
+            {{ identity.name + ' ' + identity.surname }}<span class="tipo admin1">Ingresaste como: Administrador</span>
+          </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Mi perfil</a>
                         <a class="dropdown-item" [routerLink]="['/ajustes']">Ajustes</a>
@@ -238,25 +199,34 @@
         </div>
     </nav>
 
-
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <br><br>
+                <h3>PERFIL ADMINNISTRADOR EMPRESA </h3>
+                <p>&lt;nav class="navbar navbar-expand-lg <span class="text-success"> navbar-celeste2 bg-celeste</span>" &gt; </p>
+                <p></p>
+            </div>
+        </div>
+    </div>
     <!---------------------------------------------- PERFIL ADMINNISTRADOR EMPRESA   ---------------------------------------->
-    <br>
-    <h1>PERFIL ADMINNISTRADOR EMPRESA</h1><br>
-    <nav class="navbar navbar-expand-lg navbar-admin3 bg-admin3" *ngIf="identity.role == 3">
+
+    <nav class="navbar navbar-expand-lg navbar-celeste bg-celeste" *ngIf="identity.role == 3">
+        <a class="navbar-brand text-light" href="#">FINNCA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-light" [routerLink]="['/inicio']">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link " [routerLink]="['/inicio']">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" [routerLink]="['/camion']">Camion</a>
+                    <a class="nav-link" [routerLink]="['/camion']">Camion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" [routerLink]="['/pedidos-administrador-empresa']">Pedidos</a>
+                    <a class="nav-link" [routerLink]="['/pedidos-administrador-empresa']">Pedidos</a>
                 </li>
             </ul>
 
@@ -264,8 +234,8 @@
             <ul class="navbar-nav navbar-right" *ngIf="!token == 0 || !token == null">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Bienvenido Usuario<br><span class="tipo admin3">Ingresaste como: Administrador</span>
-                  </a>
+            {{ identity.name + ' ' + identity.surname }}<span class="tipo admin1">Ingresaste como: Administrador</span>
+          </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Mi perfil</a>
                         <a class="dropdown-item" [routerLink]="['/ajustes']">Ajustes</a>
@@ -277,36 +247,47 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <br><br>
+                <h3>PERFIL ADMINNISTRADOR SUCURSAL </h3>
+                <p>&lt;nav class="navbar navbar-expand-lg <span class="text-success"> navbar-celeste2 bg-celeste2</span>" &gt; </p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
     <!---------------------------------------------- PERFIL ADMINNISTRADOR SUCURSAL   ---------------------------------------->
-    <br>
-    <h1>PERFIL ADMINNISTRADOR SUCURSAL</h1><br>
-    <nav class="navbar navbar-expand-lg navbar-admin4 bg-admin4" *ngIf="identity.role == 4">
+
+    <nav class="navbar navbar-expand-lg navbar-celeste2 bg-celeste2" *ngIf="identity.role == 4">
+        <a class="navbar-brand " href="#">FINNCA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-light" [routerLink]="['/inicio']">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" [routerLink]="['/inicio']">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" [routerLink]="['/camion']">Camion</a>
+                    <a class="nav-link " [routerLink]="['/camion']">Camion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" [routerLink]="['/pedidos-administrador-sucursal']">Pedidos</a>
+                    <a class="nav-link" [routerLink]="['/pedidos-administrador-sucursal']">Pedidos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" [routerLink]="['/company-admin-cart']">Usuarios</a>
+                    <a class="nav-link " [routerLink]="['/company-admin-cart']">Usuarios</a>
                 </li>
             </ul>
 
 
             <ul class="navbar-nav navbar-right" *ngIf="!token == 0 || !token == null">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Bienvenido Usuario<br><span class="tipo admin4">Ingresaste como: Administrador</span>
-                  </a>
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ identity.name + ' ' + identity.surname }}<span class="tipo admin1">Ingresaste como: Administrador</span>
+          </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Mi perfil</a>
                         <a class="dropdown-item" [routerLink]="['/ajustes']">Ajustes</a>
@@ -316,27 +297,39 @@
             </ul>
         </div>
     </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <br><br>
+                <h3>PERFIL BODEGUERO SUCURSAL</h3>
+                <p>&lt;nav class="navbar navbar-expand-lg <span class="text-success"> navbar-naranja bg-naranja</span>" &gt; </p>
+                <p></p>
+            </div>
+        </div>
+    </div>
 
 
     <!---------------------------------------------- PERFIL BODEGUERO SUCURSAL   ---------------------------------------->
 
-    <br>
-    <h1>PERFIL BODEGUERO SUCURSAL</h1><br>
-    <nav class="navbar navbar-expand-lg navbar-admin5 bg-admin5" *ngIf="identity.role == 5">
+
+    <nav class="navbar navbar-expand-lg navbar-naranja bg-naranja" *ngIf="identity.role == 5">
+        <a class="navbar-brand " href="#">FINNCA</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-light" [routerLink]="['/inicio']">Inicio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link " href="#" [routerLink]="['/inicio']">Inicio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" [routerLink]="['/camion']">Camion</a>
+                    <a class="nav-link " [routerLink]="['/camion']">Camion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" [routerLink]="['/pedidos-bodeguero-sucursal']">Pedidos</a>
+                    <a class="nav-link " [routerLink]="['/pedidos-bodeguero-sucursal']">Pedidos</a>
                 </li>
             </ul>
 
@@ -345,8 +338,8 @@
             <ul class="navbar-nav navbar-right" *ngIf="!token == 0 || !token == null">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Bienvenido Usuario<br><span class="tipo admin4">Ingresaste como: Administrador</span>
-                  </a>
+            {{ identity.name + ' ' + identity.surname }}<span class="tipo admin1">Ingresaste como: Administrador</span>
+          </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Mi perfil</a>
                         <a class="dropdown-item" [routerLink]="['/ajustes']">Ajustes</a>
@@ -359,32 +352,42 @@
 
 
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <br><br>
+                <h3>PERFIL EMPRESA </h3>
+                <p>&lt;nav class="navbar navbar-expand-lg <span class="text-success"> navbar-verde2 bg-verde2</span>" &gt; </p>
+                <p></p>
+            </div>
+        </div>
+    </div>
 
 
     <!---------------------------------------------- PERFIL EMPRESA   ---------------------------------------->
-    <br>
-    <h1>PERFIL EMPRESA</h1><br>
-    <nav class="navbar navbar-expand-lg navbar-admin6 bg-admin6" *ngIf="company.sub !== undefined && company.company == 'gd-g5df-45g5df-g2y5226-fhd54s'">
+
+    <nav class="navbar navbar-expand-lg navbar-verde2 bg-verde2" *ngIf="company.sub !== undefined && company.company == 'gd-g5df-45g5df-g2y5226-fhd54s'">
+        <a class="navbar-brand " href="#">Dashboard empresa</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link text-light" [routerLink]="['/company-home']">Home</a>
+                    <a class="nav-link " [routerLink]="['/company-home']">Home</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link text-light" [routerLink]="['/sucursal']">Sucursal</a>
+                <li class="nav-item ">
+                    <a class="nav-link" [routerLink]="['/sucursal']">Sucursal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-light" [routerLink]="['/registro-usuarios']">usuarios</a>
+                    <a class="nav-link " [routerLink]="['/registro-usuarios']">usuarios</a>
                 </li>
             </ul>
             <ul class="navbar-nav navbar-right ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Bienvenido Usuario<br><span class="tipo admin5">Ingresaste como: Administrador</span>
-                  </a>
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ company.fantasy_name }}<span class="tipo admin1">Ingresaste como: Administrador</span>
+          </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Mi perfil</a>
                         <a class="dropdown-item" [routerLink]="['/ajustes']">Ajustes</a>
@@ -398,64 +401,9 @@
 
 
     </div>
+    <main>
 
-    <br><br><br>
-    <!-- footer -->
-    <footer id="footer" class="blog-footer">
-        <div class="container">
-            <div class="row menupie">
-                <div class="col-md-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">¿Quienes Sómos?</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">¿Que hacemos?</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Partners</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Convenios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link active" href="#">Política de privacidad</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Mapa del Sitio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Preguntas Frecuentes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Términos y Condiciones</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Servicio al cliente</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-md-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link active" href="#">Mi cuenta</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Ingreso</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Registrarme</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Registra tu empresa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Historial de compras</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Mi camión de compras</a></li>
-                    </ul>
-
-                </div>
-                <div class="col-md-3">
-
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link disabled" href="#">Síguenos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="icofont-facebook"></i> Finnca</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="icofont-instagram"></i> @Finnca</a></li>
-                    </ul>
-
-                </div>
-            </div>
-            <div class="row" id="post-pie">
-                <div class="col-md-5">
-                    <p>© 2020 DIseñador por: JotaPe DIseño y Comunicación - www.Jotape.cl</p>
-                </div>
-                <div class="col-md-5">
-                    <p><a href="#"><i class="icofont-envelope"></i> contacto@finnca.cl</a> - <i class="icofont-phone"></i> 123456789</p>
-                </div>
-                <div class="col-md-2"><img src="images/webpay.jpg" alt="Medios de pago" class="img-fluid img-pagos"></div>
-            </div>
-        </div>
-    </footer>
+    </main>
 </body>
 
 </html>

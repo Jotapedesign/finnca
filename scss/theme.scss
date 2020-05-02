@@ -1,9 +1,24 @@
 @import "functions";
 @import "variables";
 @import "mixins";
+main {
+    min-height: 100vh;
+}
+
+.navbar-toggler {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+}
+
+.navbar-toggler-icon {
+    background-image: escape-svg($navbar-light-toggler-icon-bg);
+}
+
 
 /****** Menus *******/
 
+
+/*
 .navbar-admin1 {
     color: $gray-500;
     a {
@@ -69,6 +84,7 @@
 .bg-admin6 {
     background-color: $primary;
 }
+*/
 
 .user {
     color: $celeste;
@@ -88,35 +104,10 @@ span.tipo {
 
 .tipo.admin1 {
     position: absolute;
-    color: $primary;
     padding: 5px;
     margin: 0;
     top: 25px;
     right: 0;
-}
-
-.tipo.admin2 {
-    background-color: $naranja;
-    color: #fff;
-    padding: 5px;
-}
-
-.tipo.admin3 {
-    background-color: $naranja;
-    color: #fff;
-    padding: 5px;
-}
-
-.tipo.admin4 {
-    background-color: $naranja;
-    color: #fff;
-    padding: 5px;
-}
-
-.tipo.admin5 {
-    background-color: $naranja;
-    color: #fff;
-    padding: 5px;
 }
 
 
@@ -124,7 +115,7 @@ span.tipo {
 
 #contenido,
 .seccion {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 #cabecera,
@@ -140,7 +131,7 @@ span.tipo {
 }
 
 #cabecera {
-    min-height: 80vh;
+    min-height: 40vh;
     background-image: url(../images/header1.jpg);
     background-position: top center;
 }
@@ -309,16 +300,9 @@ footer li.nav-item a.nav-link {
     max-height: 50px;
 }
 
-ul.usuario {
-    float: right;
-}
+ul.usuario {}
 
-ul.usuario li {
-    float: left;
-    list-style: none;
-    margin: 10px;
-    display: block;
-}
+ul.usuario li {}
 
 a.carro {
     height: 30px;
@@ -339,8 +323,31 @@ a.carro {
     ;
 }
 
+.transparencia-d {
+    background-color: rgba(0, 0, 0, .7);
+    padding: 30px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        color: #fff;
+    }
+}
+
+.transparencia-l {
+    background-color: rgba(255, 255, 255, .9);
+    padding: 23px;
+}
+
 
 /********** Productos ***********/
+
+.filtros {
+    padding-bottom: 20px;
+}
 
 .card-title.producto {
     color: $primary;
@@ -574,3 +581,4 @@ ul.resumen-pedido li:last-of-type {
 }
 
 @import "theme/_image-checkbox";
+@import "theme/flickity";

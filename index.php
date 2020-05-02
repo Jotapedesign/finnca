@@ -16,7 +16,6 @@
     <link href="css/theme.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
 
-
     <!-- Favicons -->
     <!--
 <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -37,63 +36,60 @@
 <body>
 
     <!-- Cabecera -->
-<?php include 'header.php' ?>
+    <?php include 'header.php' ?>
     <!-- Fin  Cabecera -->
     <!-- Cabecera -->
-    <section id="cabecera">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 wow fadeInLeft">
-                    <h1>Lo mejor del campo</br> directo a tu mesa</h1>
-                    <button class="btn btn-lg btn-primary my-2 my-sm-0" type="submit">Conócenos</button>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/plato1.png" class="wow fadeInRight" data-wow-delay="0.5s" alt="plato">
-                </div>
-            </div>
-        </div>
-
-    </section>
+    <?php include 'cabecera-home.php' ?>
     <!-- Fin Cabecera -->
 
-
     <!-- banners -->
-    <section id="banners">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 ">
-                    <div class="card banner1">
-                        <div class="col-md-6 offset-md-6">
-                            <div class="card-body text-right">
-                                <h5 class="card-title">¿Sábes de donde vienen nuestros productos?</h5>
-                                <a href="#" class="btn btn-secondary">Descúbrelo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 ">
-                    <div class="card banner2">
-                        <div class="col-md-6 ">
-                            <div class="card-body">
-                                <h5 class="card-title">Que nada te falte en la cuarentena </h5>
-                                <p class="card-text">Pide tu caja pre-armada ahora!
-                                </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- Fin banners -->
 
     <!-- Productos -->
     <main id="catalogo" role="main" class="container">
+    <section class="filtros">
+        <div class="container">
+        <div class="row filtros">
+                        <div class="col-12 text-center">
+                            <h2>¿Buscas algún producto?</h2>
+                        </div>
+                    </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <form class="form-inline">
+                        <div class="form-row">
+                                <label class="mr-sm-2">Categoría</label>
+                                <select class="form-control " id="País">
+                                    <option>Frutas</option>
+                                    <option>Verduras</option>
+                                </select>
+                                <label class="mr-sm-2 ml-sm-4">Ordenar por..</label>
+                                <select class="form-control " id="País">
+                                    <option>Precio de mayor a menor</option>
+                                    <option>Precio de menor a mayor</option>
+                                    <option>Productos más vendidos</option>
+                                    <option>Productos menos vendidos</option>
+                                </select>
+                                <input class="form-control mr-sm-2 ml-sm-2" type="text" placeholder="Encuentra lo que necesites"
+                                aria-label="Search">
+                            <button class="btn btn-primary my-2 my-sm-0" type="submit"><i
+                                    class="icofont-search-1"></i></button>
+
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
         <div class="row">
             <div class="col-md-12">
                 <h3>Encuentra todo lo que necesitas</h3>
-                <hr/>
+                <hr />
                 <h5>Filtro</h5>
             </div>
         </div>
@@ -106,9 +102,11 @@
                         <h4 class="card-text precio">$1200 kg</h4>
                         <form>
                             <div class="form-group col-8 offset-2">
-                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="qty text form-control" size="8" pattern="" inputmode="">
+                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty"
+                                    class="qty text form-control" size="8" pattern="" inputmode="">
                             </div>
-                            <button type="submit" class="btn btn-primary btn-add"><i class="icofont-cart-alt"></i></button>
+                            <button type="submit" class="btn btn-primary btn-add"><i
+                                    class="icofont-cart-alt"></i></button>
                         </form>
                     </div>
                 </div>
@@ -123,9 +121,11 @@
                         <h4 class="card-text precio">$1200 kg</h4>
                         <form>
                             <div class="form-group col-8 offset-2">
-                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="qty text form-control" size="8" pattern="" inputmode="">
+                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty"
+                                    class="qty text form-control" size="8" pattern="" inputmode="">
                             </div>
-                            <button type="submit" class="btn btn-primary btn-add"><i class="icofont-cart-alt"></i></button>
+                            <button type="submit" class="btn btn-primary btn-add"><i
+                                    class="icofont-cart-alt"></i></button>
                         </form>
                     </div>
                 </div>
@@ -139,9 +139,11 @@
                         <h4 class="card-text precio">$1200 kg</h4>
                         <form>
                             <div class="form-group col-8 offset-2">
-                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="qty text form-control" size="8" pattern="" inputmode="">
+                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty"
+                                    class="qty text form-control" size="8" pattern="" inputmode="">
                             </div>
-                            <button type="submit" class="btn btn-primary btn-add"><i class="icofont-cart-alt"></i></button>
+                            <button type="submit" class="btn btn-primary btn-add"><i
+                                    class="icofont-cart-alt"></i></button>
                         </form>
                     </div>
                 </div>
@@ -160,7 +162,8 @@
 
         </div>
         <div class="row justify-content-center text-center">
-            <div *ngFor="let product_price of products | paginate: {itemsPerPage: 1, currentPage: pageActual}" class="justify-content-center mt-2">
+            <div *ngFor="let product_price of products | paginate: {itemsPerPage: 1, currentPage: pageActual}"
+                class="justify-content-center mt-2">
 
                 <form #cartForm="ngForm" (ngSubmit)="onSubmitCart(id.value, cantidad.value, cartForm)" class="mb-3">
 
@@ -169,11 +172,11 @@
                         <div class="card-body">
                             <h5 class="card-title">Nombre</h5>
                             <span>
-                <div *ngIf="product_price.type == 1" class="card-text">
-                  <h4 class="precio">$1200 - KG</h4>
-                  <h6 class="unitario">$100 - C/U</h6>
-                </div>				    				
-            </span>
+                                <div *ngIf="product_price.type == 1" class="card-text">
+                                    <h4 class="precio">$1200 - KG</h4>
+                                    <h6 class="unitario">$100 - C/U</h6>
+                                </div>
+                            </span>
                             <div class="form-group col-8 offset-2">
                                 <input type="number" name="cantidad" #cantidad class="form-control mt-2">
                             </div>
@@ -225,16 +228,20 @@
                             <form>
                                 <div class="form-group">
                                     <label for="nombrenews">Nombre</label>
-                                    <input type="email" class="form-control" id="nombrenews" placeholder="Ingresa tu correo">
+                                    <input type="email" class="form-control" id="nombrenews"
+                                        placeholder="Ingresa tu correo">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Email</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                    <small id="emailHelp" class="form-text text-muted">Nos aseguraremos de guardar muy bien tu información</small>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">Nos aseguraremos de guardar muy
+                                        bien tu información</small>
                                 </div>
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                    <label class="form-check-label" for="exampleCheck1">Acepto la Política de privacidad</label>
+                                    <label class="form-check-label" for="exampleCheck1">Acepto la Política de
+                                        privacidad</label>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Suscribirme</button>
                             </form>
@@ -284,8 +291,10 @@
 
                     <ul class="nav flex-column">
                         <li class="nav-item"><a class="nav-link disabled" href="#">Síguenos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="icofont-facebook"></i> Finnca</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><i class="icofont-instagram"></i> @Finnca</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="icofont-facebook"></i> Finnca</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="icofont-instagram"></i> @Finnca</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -295,20 +304,27 @@
                     <p>© 2020 DIseñador por: JotaPe DIseño y Comunicación - www.Jotape.cl</p>
                 </div>
                 <div class="col-md-5">
-                    <p><a href="#"><i class="icofont-envelope"></i> contacto@finnca.cl</a> - <i class="icofont-phone"></i> 123456789</p>
+                    <p><a href="#"><i class="icofont-envelope"></i> contacto@finnca.cl</a> - <i
+                            class="icofont-phone"></i> 123456789</p>
                 </div>
-                <div class="col-md-2"><img src="images/webpay.jpg" alt="Medios de pago" class="img-fluid img-pagos"></div>
+                <div class="col-md-2"><img src="images/webpay.jpg" alt="Medios de pago" class="img-fluid img-pagos">
+                </div>
             </div>
         </div>
     </footer>
 </body>
 
 </html>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/wow.min.js"></script>
-
+<script src="js/flickity.min.js"></script>
 <script>
-    new WOW().init();
+new WOW().init();
+</script>
+<script>
+$('#finnCarousel').carousel({
+    interval: 5000,
+})
 </script>
