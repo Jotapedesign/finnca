@@ -49,7 +49,7 @@
     <main id="catalogo" role="main" class="container">
     <section class="filtros">
         <div class="container">
-        <div class="row filtros">
+        <div class="row filtros ">
                         <div class="col-12 text-center">
                             <h2>¿Buscas algún producto?</h2>
                         </div>
@@ -94,7 +94,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeIn">
+            <div class="col-lg-3 col-md-4 col-6 wow fadeIn">
                 <div class="card text-center">
                     <img src="images/productos/manzana.png" alt="manzana" class="card-img-top ">
                     <div class="card-body">
@@ -112,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeIn">
+            <div class="col-lg-3 col-md-4 col-6 wow fadeIn">
                 <div class="card text-center ">
                     <div class="ribbon ribbon-top-left"><span>¡Nuevo!</span></div>
                     <img src="images/productos/manzana.png" alt="manzana" class="card-img-top ">
@@ -130,7 +130,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeIn">
+            <div class="col-lg-3 col-md-4 col-6 wow fadeIn">
                 <div class="card text-center">
                     <div class="ribbon ribbon-top-left oferta"><span>¡Promoción!</span></div>
                     <img src="images/productos/manzana.png" alt="manzana" class="card-img-top ">
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6 col-xs-12 wow fadeIn">
+            <div class="col-lg-3 col-md-4 col-6 wow fadeIn">
                 <div class="card text-center agotado">
                     <div class="ribbon ribbon-top-left agotado"><span>Agotado</span></div>
                     <img src="images/productos/manzana.png" alt="manzana" class="card-img-top ">

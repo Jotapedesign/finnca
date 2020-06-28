@@ -71,13 +71,13 @@
             </div>
         </div>
         <article>
-            <div class="row intro-text">
-                <div class="col-md-8 offset-md-2">
+            <div class="row intro-text table-responsive">
+                <div class="col-md-8 offset-md-2 ">
                     <form>
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th scope="col">Vista previa</th>
+                                    <th scope="col d-none d-sm-block">Vista previa</th>
                                     <th scope="col">Producto</th>
                                     <th scope="col">$ Precio (CLP)</th>
                                     <th scope="col">Cantidad</th>
@@ -87,8 +87,8 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row"><img src="images/miniaturas/manzana-thumb.png" alt="manzana"
-                                            class="img-fluid"></th>
+                                    <th scope="d-none ">
+                                        <img src="images/miniaturas/manzana-thumb.png" alt="manzana" class="img-fluid"></th>
                                     <td>
                                         <h6>Tomate de arica</h6>
                                         <p class="peso">20kg</p>

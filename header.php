@@ -1,12 +1,18 @@
 <header>
+
     <div class="container ">
         <div class="row align-items-center ">
 
             <div class="col-lg-4 col-12 ">
-                <div class="form-group">
+            <a href="https://wa.me/56979936754?text=Hola" class="whatsapp d-block d-sm-none" target="_blank"> <i class="icofont-brand-whatsapp"></i></a>
+<div class="contacto-cabecera d-none d-sm-block text-center">
+    <h4>Contáctanos:</h4>
+<h5><i class="icofont-brand-whatsapp"></i> +56 9 9837 1565</h5>
+</div>
+                <div class="form-group d-none">
                 <form class="form-inline mt-2 mt-md-0 justify-content-center">
                         <div class="form-row ">
-                            <div class="col">
+                            <div class="col ">
                                 <label>País</label>
                                 <select class="form-control " id="País">
                                     <option>Chile</option>
@@ -38,17 +44,6 @@
         </button>
 
                 <ul class="navbar-nav ml-md-auto usuario">
-                        <li class="nav-item dropdown">
-                            <a class="perfil-link nav-link dropdown-toggle" data-toggle="dropdown" href="#"
-                                role="button" aria-haspopup="true" aria-expanded="false">
-                                <i class="icofont-user user"></i>
-                                Mi Cuenta<span class="tipo admin1">super-admin</span></a>
-                            <div class="dropdown-menu">
-                            <a class="dropdown-item" href="perfil.php">Mi perfil</a>
-                            <a class="dropdown-item">Ajustes</a>
-                            <a class="dropdown-item">Salir</a>
-                            </div>
-                        </li>
                         <li class="nav-item">
                             <a class="carro nav-link " href="carro.php">
                                 <i class="navbar-tool-icon"><img src="images/iconos/camion0.png" class="" alt="carro"></i>

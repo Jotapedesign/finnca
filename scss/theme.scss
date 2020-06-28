@@ -300,10 +300,6 @@ footer li.nav-item a.nav-link {
     max-height: 50px;
 }
 
-ul.usuario {}
-
-ul.usuario li {}
-
 a.carro {
     height: 30px;
     display: block;
@@ -578,6 +574,27 @@ ul.resumen-pedido li:last-of-type {
     text-align: center;
     padding: 20px;
     ;
+}
+
+
+/********* whatsapp *******/
+
+.whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    top: 40px;
+    left: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.whatsapp-icon {
+    margin-top: 13px;
 }
 
 @import "theme/_image-checkbox";
