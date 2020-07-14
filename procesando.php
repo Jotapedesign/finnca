@@ -40,103 +40,19 @@
     <?php include 'header.php' ?>
     <!-- Fin  Cabecera -->
 
-    <!-- cabecera-secciones -->
-    <section id="header-carro">
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-12 ">
-                    <h1>¿Quienes Somos?</h1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- cabecera-secciones -->
-
-    <!-- banners -->
-    <!-- Fin banners -->
 
     <!-- Contenido -->
-        <main role="main" class="container">
+    <section id="contenido">
+      <main role="main" class="container">
      <section id="contenido">
-           <article>
-                <div class="row intro-text">
-                    <div class="col-md-6">
-                        <h1>Finnca es un nuevo concepto en comercio justo y delivery</h1>
-                        <br />
-                        <p>El proyecto La Finnca consiste principalmente en llevar hasta tu domicilio o empresa, los
-                            mejores productos de nuestra tierra, directamente desde los productores, evitando al máximo
-                            los intermediarios, para ofrecer un precio justo para los consumidores, como para los
-                            productores</p>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="images/somo01.webp" class="img-fluid wow bounceIn" data-wow-duration="3s"
-                            alt="quienes somos">
-                    </div>
-                </div>
-                <div class="row seccion">
-                    <div class="col-md-6">
-                    </div>
-                    <div class="col-md-6">
-                        <h1>Un poco de historia...</h1>
-                        <br />
-                        <p>la Finnca nace como....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
-                            vulputate odio, id placerat ante. Phasellus felis nisl, condimentum non laoreet nec,
-                            consectetur sit amet purus. Fusce nisi ex, suscipit at fermentum quis, elementum et turpis.
-                            Nullam elementum, justo ac luctus porttitor, elit turpis gravida libero, ac luctus velit
-                            lectus quis orci. Donec sed elit lectus. Etiam id sem id lectus posuere sagittis. Fusce quis
-                            dui quis ante luctus eleifend. Phasellus fermentum neque felis, et interdum ipsum interdum
-                            a. Nulla at nulla non mi pretium suscipit et vel lacus. </p>
-                    </div>
-
-                </div>
-            </article>
-     </section>
-     <section id="contenido">
-
-            <!-- Equipo -->
-
-            <div class="row">
-                <div class="col-md-12 equipo">
-                    <h1 class="text-center">Nuestro Equipo</h1>
-                    </h1>
-                </div>
-
-                <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeIn">
-                    <div class="card text-center perfil">
-                        <div class="card-body">
-                            <img src="images/perfil01.webp" alt="manzana" class="">
-                            <h4 class="card-title nombre">Nombre y apellido</h4>
-                            <h5 class="card-text cargo">cargo</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet urna dolor.
-                                Quisque rhoncus vel ante eget efficitur. Pellentesque finibus neque mauris.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeIn">
-                    <div class="card text-center perfil">
-                        <div class="card-body">
-                            <img src="images/perfil01.webp" alt="manzana" class="">
-                            <h4 class="card-title nombre">Nombre y apellido</h4>
-                            <h5 class="card-text cargo">cargo</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet urna dolor.
-                                Quisque rhoncus vel ante eget efficitur. Pellentesque finibus neque mauris.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeIn">
-                    <div class="card text-center perfil">
-                        <div class="card-body">
-                            <img src="images/perfil01.webp" alt="manzana" class="">
-                            <h4 class="card-title nombre">Nombre y apellido</h4>
-                            <h5 class="card-text cargo">cargo</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet urna dolor.
-                                Quisque rhoncus vel ante eget efficitur. Pellentesque finibus neque mauris.</p>
-                        </div>
-                    </div>
-                </div>
-
+     <div class="row ">
+                <div class="col-md-12 text-center">
+                   
+                <img src="images/logo_animado.gif" alt="error 404" class="img-fluid">
+                            </div>
             </div>
-            <!-- Fin Equipo -->
+     </section>
+
     </section>
 
         </main>

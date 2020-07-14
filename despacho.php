@@ -19,9 +19,9 @@
 
     <!-- Favicons -->
     <!--
-<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.webp" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.webp" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.webp" sizes="16x16" type="image/png">
 <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
@@ -81,7 +81,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row"><img src="images/miniaturas/manzana-thumb.png" alt="manzana"
+                            <th scope="row"><img src="images/miniaturas/manzana-thumb.webp" alt="manzana"
                                     class="img-fluid"></th>
                             <td>
                                 <h6>Tomate de arica</h6>
@@ -101,7 +101,7 @@
                             <td><a href="#"><i class="icofont-edit primary"></i></a></td>
                         </tr>
                         <tr>
-                            <th scope="row"><img src="images/miniaturas/manzana-thumb.png" alt="manzana"
+                            <th scope="row"><img src="images/miniaturas/manzana-thumb.webp" alt="manzana"
                                     class="img-fluid"></th>
                             <td>
                                 <h6>Tomate de arica</h6>
@@ -121,7 +121,7 @@
                             <td><a href="#"><i class="icofont-edit primary"></i></a></td>
                         </tr>
                         <tr>
-                            <th scope="row"><img src="images/miniaturas/manzana-thumb.png" alt="manzana"
+                            <th scope="row"><img src="images/miniaturas/manzana-thumb.webp" alt="manzana"
                                     class="img-fluid"></th>
                             <td>
                                 <h6>Tomate de arica</h6>
@@ -204,7 +204,7 @@
                             <div class="form-check custom-control custom-radio image-radio">
                                 <input class="form-check-input" type="radio" name="pago" id="ck1a" value="option2">
                                 <label class="custom-control-label" for="ck1a">
-                                    <img src="images/pago/webpay.png" alt="#" class="img-fluid">
+                                    <img src="images/pago/webpay.webp" alt="#" class="img-fluid">
 
                                 </label>
                             </div>
@@ -214,7 +214,7 @@
                             <div class="form-check custom-control custom-radio image-radio">
                                 <input class="form-check-input" type="radio" name="pago" id="ck1b" value="option2">
                                 <label class="custom-control-label" for="ck1b">
-                                    <img src="images/pago/khipu.png" alt="#" class="img-fluid">
+                                    <img src="images/pago/khipu.webp" alt="#" class="img-fluid">
 
                                 </label>
                             </div>
@@ -224,7 +224,7 @@
                                 <div class="form-check custom-control custom-radio image-radio">
                                     <input class="form-check-input" type="radio" name="pago" id="ck1c" value="option3">
                                     <label class="custom-control-label" for="ck1c">
-                                        <img src="images/pago/payu.png" alt="#" class="img-fluid">
+                                        <img src="images/pago/payu.webp" alt="#" class="img-fluid">
 
                                     </label>
                                 </div>
@@ -300,7 +300,7 @@
                     <p><a href="#"><i class="icofont-envelope"></i> contacto@finnca.cl</a> - <i
                             class="icofont-phone"></i> 123456789</p>
                 </div>
-                <div class="col-md-2"><img src="images/webpay.jpg" alt="Medios de pago" class="img-fluid img-pagos">
+                <div class="col-md-2"><img src="images/webpay.webp" alt="Medios de pago" class="img-fluid img-pagos">
                 </div>
             </div>
         </div>

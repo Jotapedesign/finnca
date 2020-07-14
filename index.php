@@ -18,9 +18,9 @@
 
     <!-- Favicons -->
     <!--
-<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.webp" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.webp" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.webp" sizes="16x16" type="image/png">
 <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
@@ -94,28 +94,27 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-6 wow fadeIn">
-                <div class="card text-center">
-                    <img src="images/productos/manzana.png" alt="manzana" class="card-img-top ">
-                    <div class="card-body">
-                        <h5 class="card-title producto">Manzana</h5>
-                        <h4 class="card-text precio">$1200 kg</h4>
-                        <form>
-                            <div class="form-group col-8 offset-2">
-                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty"
-                                    class="qty text form-control" size="8" pattern="" inputmode="">
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-add"><i
-                                    class="icofont-cart-alt"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-3 col-md-4 col-6 wow fadeIn">
-                <div class="card text-center ">
+        
+            <div class="card-deck row-cols-md-2 row-cols-xs-2">
+        <div class="card text-center wow fadeIn ">
+                   <img src="images/productos/manzana.webp" alt="manzana" class="card-img-top " data-src="images/productos/manzana.jpg">
+                    <div class="card-body ">
+                        <h5 class="card-title producto">Manzana</h5>
+                        <h4 class="card-text precio">$1200 kg</h4>
+                        <form>
+                            <div class="form-group col-8 offset-2">
+                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty"
+                                    class="qty text form-control" size="8" pattern="" inputmode="">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Añadir al carro</button>
+                        </form>
+                    </div>
+                </div>
+
+            <div class="card text-center wow fadeIn">
                     <div class="ribbon ribbon-top-left"><span>¡Nuevo!</span></div>
-                    <img src="images/productos/manzana.png" alt="manzana" class="card-img-top ">
+                    <img src="images/productos/manzana.webp" alt="manzana" class="card-img-top " data-src="images/productos/manzana.jpg">
                     <div class="card-body">
                         <h5 class="card-title producto">Manzana</h5>
                         <h4 class="card-text precio">$1200 kg</h4>
@@ -129,11 +128,9 @@
                         </form>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 wow fadeIn">
-                <div class="card text-center">
+                <div class="card text-center wow fadeIn">
                     <div class="ribbon ribbon-top-left oferta"><span>¡Promoción!</span></div>
-                    <img src="images/productos/manzana.png" alt="manzana" class="card-img-top ">
+                    <img src="images/productos/manzana.webp" alt="manzana" class="card-img-top " data-src="images/productos/manzana.jpg">
                     <div class="card-body">
                         <h5 class="card-title producto">Manzana</h5>
                         <h4 class="card-text precio">$1200 kg</h4>
@@ -147,19 +144,16 @@
                         </form>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 wow fadeIn">
-                <div class="card text-center agotado">
-                    <div class="ribbon ribbon-top-left agotado"><span>Agotado</span></div>
-                    <img src="images/productos/manzana.png" alt="manzana" class="card-img-top ">
+                <div class="card text-center wow fadeIn agotado">
+                    <div class="ribbon ribbon-top-left "><span>Agotado</span></div>
+                    <img src="images/productos/manzana.webp" alt="manzana" class="card-img-top " data-src="images/productos/manzana.jpg">
                     <div class="card-body">
                         <h5 class="card-title producto">Manzana</h5>
                         <h4 class="card-text precio">$1200 kg</h4>
                         <h6>¡Estamos cosechando para reponer el stock!</h6>
                     </div>
-                </div>
             </div>
-
+</div>
         </div>
         <div class="row justify-content-center text-center">
             <div *ngFor="let product_price of products | paginate: {itemsPerPage: 1, currentPage: pageActual}"
@@ -168,7 +162,7 @@
                 <form #cartForm="ngForm" (ngSubmit)="onSubmitCart(id.value, cantidad.value, cartForm)" class="mb-3">
 
                     <div class="card ml-1 mr-1" style="width: 18rem;">
-                        <img class="card-img-top" src="images/productos/manzana.png" />
+                        <img class="card-img-top" src="images/productos/manzana.webp" data-src="images/productos/manzana.jpg"/>
                         <div class="card-body">
                             <h5 class="card-title">Nombre</h5>
                             <span>
@@ -307,7 +301,7 @@
                     <p><a href="#"><i class="icofont-envelope"></i> contacto@finnca.cl</a> - <i
                             class="icofont-phone"></i> 123456789</p>
                 </div>
-                <div class="col-md-2"><img src="images/webpay.jpg" alt="Medios de pago" class="img-fluid img-pagos">
+                <div class="col-md-2"><img src="images/webpay.webp" alt="Medios de pago" class="img-fluid img-pagos">
                 </div>
             </div>
         </div>

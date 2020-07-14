@@ -2,7 +2,7 @@
     <div
         data-flickity='{"prevNextButtons": true, "fade": true, "pageDots": false, "hash": false, "autoPlay": 8500, "pauseAutoPlayOnHover": false, "selectedAttraction": 0.01, "friction": 0.15}'>
         <!-- Item 4-->
-        <div class="w-100 bg-cover" style="background-image: url(images/slide05.jpg);">
+        <div class="w-100 bg-cover" style="background-image: url(images/slide05.webp);">
             <div class="container d-flex flex-column">
                 <div class="row align-items-center py-12" style="min-height: 350px;">
                     <div class="col-12 col-md-6 flick-item">
@@ -26,7 +26,7 @@
 
 
         <!-- Item 2-->
-        <div class="w-100 bg-cover" style="background-image: url(images/slide01.jpg);">
+        <div class="w-100 bg-cover" style="background-image: url(images/slide01.webp);">
             <div class="container d-flex flex-column">
                 <div class="row align-items-center py-12" style="min-height: 350px;">
                     <div class="col-12 col-md-6   flick-item">
@@ -46,13 +46,13 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-5 offset-md-1">
-                        <img src="images/plato1.png" height="360">
+                        <img src="images/plato1.webp" height="360">
                     </div>
                 </div>
             </div>
         </div>
         <!-- Item 3-->
-        <div class="w-100 bg-cover" style="background-image: url(images/slide04.jpg);">
+        <div class="w-100 bg-cover" style="background-image: url(images/slide04.webp);">
             <div class="container d-flex flex-column">
                 <div class="row align-items-center py-12" style="min-height: 350px;">
                     <div class="col-12 col-md-6 offset-md-6  flick-item">
@@ -74,7 +74,7 @@
         </div>
 
         <!-- Item 4 -->
-        <div class="w-100 bg-cover" style="background-image: url(images/slide03.jpg);">
+        <div class="w-100 bg-cover" style="background-image: url(images/slide03.webp);">
             <div class="container d-flex flex-column">
                 <div class="row align-items-center py-12" style="min-height: 350px;">
                     <div class="col-12 col-md-7 offset-md-5  flick-item">

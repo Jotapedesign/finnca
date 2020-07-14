@@ -3,7 +3,7 @@
     <div class="container ">
         <div class="row align-items-center ">
 
-            <div class="col-lg-4 col-12 ">
+            <div class="col-sm-4 col-12 ">
             <a href="https://wa.me/56979936754?text=Hola" class="whatsapp d-block d-sm-none" target="_blank"> <i class="icofont-brand-whatsapp"></i></a>
 <div class="contacto-cabecera d-none d-sm-block text-center">
     <h4>Contáctanos:</h4>
@@ -32,10 +32,10 @@
                     </form>
                 </div>
             </div>
-            <div class="col-lg-4 col-12 text-center brand">
+            <div class="col-sm-4 col-12 text-center brand">
                 <img src="images/logo-v.png" alt="Logo Finnca" class="img-fluid">
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-sm-4 col-12">
                 
                 <nav class="navbar nav navbar-expand-md">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"

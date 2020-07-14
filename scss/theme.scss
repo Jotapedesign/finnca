@@ -132,7 +132,7 @@ span.tipo {
 
 #cabecera {
     min-height: 40vh;
-    background-image: url(../images/header1.jpg);
+    background-image: url(../images/header1.webp);
     background-position: top center;
 }
 
@@ -146,11 +146,11 @@ nav.navbar.menu-principal {
 }
 
 #header-carro {
-    background-image: url(../images/header-carro.jpg);
+    background-image: url(../images/header-carro.webp);
 }
 
 #header-hacemos {
-    background-image: url(../images/header-hacemos.jpg);
+    background-image: url(../images/header-hacemos.webp);
     background-position: top center;
 }
 
@@ -180,7 +180,7 @@ nav.navbar.menu-principal {
 
 .banner1 {
     background-color: lighten($primary, 40);
-    background: url(../images/banner1.png);
+    background: url(../images/banner1.webp);
     color: #fff;
     h1,
     h2,
@@ -510,11 +510,11 @@ a.carro {
 }
 
 #newsletter {
-    background-image: url(../images/news-bg.jpg);
+    background-image: url(../images/news-bg.webp);
 }
 
 #servicio {
-    background-image: url(../images/gestion-bg.jpg);
+    background-image: url(../images/gestion-bg.webp);
 }
 
 #newsletter,
@@ -537,7 +537,7 @@ a.carro {
 }
 
 #cabecera-resumen {
-    background-image: url(../images/heacer-resumen.jpg);
+    background-image: url(../images/heacer-resumen.webp);
     background-position: center center;
     background-attachment: fixed;
 }
@@ -595,6 +595,21 @@ ul.resumen-pedido li:last-of-type {
 
 .whatsapp-icon {
     margin-top: 13px;
+}
+
+.card-deck .card {
+    margin-bottom: 40px !important;
+}
+
+
+/* media queries */
+
+@media (max-width: 767px) {
+    .card-deck .card {
+        margin-bottom: 80px!important;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
 
 @import "theme/_image-checkbox";

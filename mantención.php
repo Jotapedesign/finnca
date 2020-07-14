@@ -19,9 +19,9 @@
 
     <!-- Favicons -->
     <!--
-<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.webp" sizes="180x180">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.webp" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.webp" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
@@ -38,8 +38,6 @@
 
     <!-- Cabecera -->
     <?php include 'header.php' ?>
-    <!-- Fin Menú Cabecera -->
-    </header>
     <!-- Fin  Cabecera -->
 
     <!-- cabecera-secciones -->
@@ -58,94 +56,90 @@
     <!-- Fin banners -->
 
     <!-- Contenido -->
-    <main role="main" class="container" id="contenido">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <a class="nav-link active" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
-                        role="tab" aria-controls="v-pills-messages" aria-selected="false">Mi perfil</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Ajustes</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Salir</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Localizaciones</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Categorías</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Productos</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Usuarios</a>
-                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-                        aria-controls="v-pills-messages" aria-selected="false">Empresas</a>
+        <main role="main" class="container">
+     <section id="contenido">
+           <article>
+                <div class="row intro-text">
+                    <div class="col-md-6">
+                        <h1>Finnca es un nuevo concepto en comercio justo y delivery</h1>
+                        <br />
+                        <p>El proyecto La Finnca consiste principalmente en llevar hasta tu domicilio o empresa, los
+                            mejores productos de nuestra tierra, directamente desde los productores, evitando al máximo
+                            los intermediarios, para ofrecer un precio justo para los consumidores, como para los
+                            productores</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="images/somo01.png" class="img-fluid wow bounceIn" data-wow-duration="3s"
+                            alt="quienes somos">
+                    </div>
+                </div>
+                <div class="row seccion">
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Un poco de historia...</h1>
+                        <br />
+                        <p>la Finnca nace como....Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel
+                            vulputate odio, id placerat ante. Phasellus felis nisl, condimentum non laoreet nec,
+                            consectetur sit amet purus. Fusce nisi ex, suscipit at fermentum quis, elementum et turpis.
+                            Nullam elementum, justo ac luctus porttitor, elit turpis gravida libero, ac luctus velit
+                            lectus quis orci. Donec sed elit lectus. Etiam id sem id lectus posuere sagittis. Fusce quis
+                            dui quis ante luctus eleifend. Phasellus fermentum neque felis, et interdum ipsum interdum
+                            a. Nulla at nulla non mi pretium suscipit et vel lacus. </p>
+                    </div>
 
                 </div>
-            </div>
+            </article>
+     </section>
+     <section id="contenido">
 
-            <div class="col-md-4 offset-md-1">
-                <article>
-                    <div class="card">
+            <!-- Equipo -->
+
+            <div class="row">
+                <div class="col-md-12 equipo">
+                    <h1 class="text-center">Nuestro Equipo</h1>
+                    </h1>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeIn">
+                    <div class="card text-center perfil">
                         <div class="card-body">
-                            <h3 class="card-title">Datos personales</h3>
-                            <ul class="list-group lista-limpia">
-                                <li><strong>Nombre: </strong>Juan Pablo Peña</li>
-                                <li><strong>Coreo Electrónico: </strong>juanpablo@jotape.cl</li>
-                                <li><strong>País: </strong>Chile</li>
-                                <li><strong>Ciudad: </strong>La Serena</li>
-                                <li><strong>Comuna: </strong>La Serena</li>
-                                <li><strong>Teléfono de Contacto: </strong>+56 9918 37077</li>
-                            </ul>
-                            <a class="icofont-edit" href="#"></a>
+                            <img src="images/perfil01.png" alt="manzana" class="">
+                            <h4 class="card-title nombre">Nombre y apellido</h4>
+                            <h5 class="card-text cargo">cargo</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet urna dolor.
+                                Quisque rhoncus vel ante eget efficitur. Pellentesque finibus neque mauris.</p>
                         </div>
                     </div>
-                </article>
-            </div>
-            <div class="col-md-4">
-                <article>
-                    <div class="card">
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeIn">
+                    <div class="card text-center perfil">
                         <div class="card-body">
-                            <h3 class="card-title">Datos de empresa</h3>
-                            <ul class="list-group lista-limpia">
-                            <li><strong>Sucursal: </strong></li>
-                              <li><strong>Dirección Principal: </strong></li>
-                            </ul>
-                            
-                              <h3 class="card-title">Direcciones de despacho</h3>
-                              <ul class="list-group lista-limpia">
-
-                                <li><strong>Empresa: </strong>JotaPe Diseño y Comunicación SPA</li>
-                                <li><label class="form-check-label" for="despacho2">
-                                <h6>Sucursal 1 / Dirección 1</h6>
-                            </label>
-                            <p>Av. Juan Cisternas 2283 Of. 03
-                                La Serena
-                                Región de Coquimbo
-                                Chile</p>
-                                <a class="icofont-edit" href="#"></a>
-</li>
-                                <li><label class="form-check-label" for="despacho2">
-                                <h6>Sucursal 2 / Dirección 2</h6>
-                            </label>
-                            <p>Av. Juan Cisternas 2283 Of. 03
-                                La Serena
-                                Región de Coquimbo
-                                Chile</p>
-                                <a class="icofont-edit" href="#"></a>
-                                </li>
-                            </ul>
-
+                            <img src="images/perfil01.png" alt="manzana" class="">
+                            <h4 class="card-title nombre">Nombre y apellido</h4>
+                            <h5 class="card-text cargo">cargo</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet urna dolor.
+                                Quisque rhoncus vel ante eget efficitur. Pellentesque finibus neque mauris.</p>
                         </div>
                     </div>
-                </article>
+                </div>
+                <div class="col-lg-4 col-sm-6 col-xs-12 wow fadeIn">
+                    <div class="card text-center perfil">
+                        <div class="card-body">
+                            <img src="images/perfil01.png" alt="manzana" class="">
+                            <h4 class="card-title nombre">Nombre y apellido</h4>
+                            <h5 class="card-text cargo">cargo</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet urna dolor.
+                                Quisque rhoncus vel ante eget efficitur. Pellentesque finibus neque mauris.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+            <!-- Fin Equipo -->
+    </section>
 
-
-
-        </div>
-
-
-    </main>
+        </main>
     <!-- Fin Contenido -->
 
     <footer id="footer" class="blog-footer">
@@ -202,7 +196,7 @@
                     <p><a href="#"><i class="icofont-envelope"></i> contacto@finnca.cl</a> - <i
                             class="icofont-phone"></i> 123456789</p>
                 </div>
-                <div class="col-md-2"><img src="images/webpay.webp" alt="Medios de pago" class="img-fluid img-pagos">
+                <div class="col-md-2"><img src="images/webpay.jpg" alt="Medios de pago" class="img-fluid img-pagos">
                 </div>
             </div>
         </div>

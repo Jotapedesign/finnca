@@ -18,9 +18,9 @@
 
     <!-- Favicons -->
     <!--
-<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.webp" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.webp" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.webp" sizes="16x16" type="image/png">
 <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
 <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
 <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
@@ -64,14 +64,14 @@
       <br/>
 <p>Sabemos que trabajan incansablemente, muchas veces por ingresos poco consecuentes con las largas jornadas de trabajo y esfuerzo. Es por eso que trabajamos directamente con los agricultores y reconocemos su ardua labor, buscando ser un apoyo económico y logistico.</p>    </div>
     <div class="col-md-6 text-center">
-      <img src="images/somo01.png" class="img-fluid wow bounceIn" data-wow-duration="3s" alt="quienes somos" >
+      <img src="images/somo01.webp" class="img-fluid wow bounceIn" data-wow-duration="3s" alt="quienes somos" >
 </div>
   </div>
   <div class="row seccion justify-content-center">
     <div class="col-md-4 wow fadeInRight" >
     <div class="card text-center perfil">
                         <div class="card-body">
-                            <img src="images/hacemos/hacemos01.png" alt="campo" class="img-fluid">
+                            <img src="images/hacemos/hacemos01.webp" alt="campo" class="img-fluid">
                             <h4 class="card-title nombre">Seleccionamos los mejores productos</h4>
                             <p>Vamos directamente a la fuente, los agricultores, para que juntos seleccionemos los mejores productos de nuestra tierra.</p>
                         </div>
@@ -81,7 +81,7 @@
     <div class="col-md-4 wow fadeInRight" data-wow-delay="0.8s">
     <div class="card text-center perfil">
                         <div class="card-body">
-                            <img src="images/hacemos/hacemos02.png" alt="transporte" class="img-fluid">
+                            <img src="images/hacemos/hacemos02.webp" alt="transporte" class="img-fluid">
                             <h4 class="card-title nombre">Almacenamiento y transporte</h4>
                             <p>Nos encargamos del almacenamiento de productos, pero también del transporte, eliminando intermediarios innecesarios</p>
                         </div>
@@ -92,7 +92,7 @@
     <div class="col-md-4 wow fadeInRight" data-wow-delay="1.5s">
     <div class="card text-center perfil">
                         <div class="card-body">
-                            <img src="images/hacemos/hacemos03.png" alt="despacho" class="img-fluid">
+                            <img src="images/hacemos/hacemos03.webp" alt="despacho" class="img-fluid">
                             <h4 class="card-title nombre">Entregamos en la puerta de tu casa o negocio</h4>
                             <p>Queremos ahorrarle costos al consumidor final, de modo que nos encargamos directamente de la distribución de los productos, pagando un precio justo a nuestros proveedores y entregando un valor igualmente justo a nuestros clientes.</p>
                         </div>
@@ -153,7 +153,7 @@
     <div class="row" id="post-pie">
 <div class="col-md-5"><p>© 2020 DIseñador por: JotaPe DIseño y Comunicación - www.Jotape.cl</p></div>
 <div class="col-md-5"><p><a href="#"><i class="icofont-envelope"></i> contacto@finnca.cl</a> - <i class="icofont-phone"></i> 123456789</p></div>
-<div class="col-md-2"><img src="images/webpay.jpg" alt="Medios de pago" class="img-fluid img-pagos"></div>
+<div class="col-md-2"><img src="images/webpay.webp" alt="Medios de pago" class="img-fluid img-pagos"></div>
 </div>
 </div>
 </footer>
