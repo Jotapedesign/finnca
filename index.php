@@ -105,8 +105,25 @@
 
         
             <div class="card-deck row-cols-md-2 row-cols-xs-2">
+
         <div class="card text-center wow fadeIn ">
-                   <img src="images/productos/manzana.webp" alt="manzana" class="card-img-top " data-src="images/productos/manzana.jpg">
+                   <img src="images/productos/manzana.png" alt="manzana" class="card-img-top ">
+                    <div class="card-body ">
+                        <h5 class="card-title producto">Manzana</h5>
+                        <h4 class="card-text precio">$1200 kg</h4>
+                        <form>
+                            <div class="form-group col-8 offset-2">
+                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty"
+                                    class="qty text form-control" size="8" pattern="" inputmode="">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Añadir al carro</button>
+                        </form>
+                    </div>
+                </div>
+
+                
+                <div class="card text-center wow fadeIn ">
+                   <img src="images/productos/manzana.png" alt="manzana" class="card-img-top ">
                     <div class="card-body ">
                         <h5 class="card-title producto">Manzana</h5>
                         <h4 class="card-text precio">$1200 kg</h4>

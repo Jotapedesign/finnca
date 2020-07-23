@@ -1,8 +1,7 @@
 <section class="flick">
-    <div
-        data-flickity='{"prevNextButtons": true, "fade": true, "pageDots": false, "hash": false, "autoPlay": 8500, "pauseAutoPlayOnHover": false, "selectedAttraction": 0.01, "friction": 0.15}'>
+    <div data-flickity='{"prevNextButtons": true, "fade": true, "pageDots": false, "hash": false, "autoPlay": 8500, "pauseAutoPlayOnHover": false, "selectedAttraction": 0.01, "friction": 0.15}'>
         <!-- Item 4-->
-        <div class="w-100 bg-cover slide" style="background-image: url(images/slides/slide01.jpg);">
+        <div class="w-100 slide" style="background-image: url(images/slides/slide01.jpg);">
             <div class="container d-flex flex-column">
                 <div class="row align-items-center py-12" style="min-height: 350px;">
                     <div class="col-12 col-md-6 flick-item">
@@ -26,7 +25,7 @@
 
 
         <!-- Item 2-->
-        <div class="w-100 bg-cover slide" style="background-image: url(images/slides/slide02.jpg);">
+        <div class="w-100 slide" style="background-image: url(images/slides/slide02.jpg);">
             <div class="container d-flex flex-column">
                 <div class="row align-items-center py-12" style="min-height: 350px;">
                     <div class="col-12 col-md-6 offset-md-6  flick-item">
@@ -49,7 +48,7 @@
             </div>
         </div>
         <!-- Item 3-->
-        <div class="w-100 bg-cover slide" style="background-image: url(images/slides/slide03.jpg);">
+        <div class="w-100 slide" style="background-image: url(images/slides/slide03.jpg);">
             <div class="container d-flex flex-column">
                 <div class="row align-items-center py-12" style="min-height: 350px;">
                     <div class="col-12 col-md-6   flick-item">

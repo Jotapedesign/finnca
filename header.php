@@ -84,6 +84,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="procesando.php">Procesando</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="confirmacion.php">Confirmación</a>
+                </li>
             </ul>
             <div class=" d-lg-block">
                 <a href="login.php" class="btn btn-sm btn-secondary btn-pricing-plan mr-1">Registrate</a>
